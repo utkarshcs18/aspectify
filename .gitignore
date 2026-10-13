@@ -1,0 +1,74 @@
+# Virtual Environments
+venv/
+env/
+ENV/
+.venv/
+env.bak/
+venv.bak/
+
+# Python Bytecode & Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Jupyter Notebook Checkpoints & Cache
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+*.ipynb_checkpoints
+.ipython/
+
+# Large Datasets (Do NOT commit huge raw dumps)
+# Raw dumps can easily exceed GitHub's 100MB limit
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+*.csv
+*.tsv
+*.jsonl
+*.parquet
+*.zip
+*.tar.gz
+
+# Exception: Keep small sample benchmark or gold test set tracked if desired:
+# !data/gold_test_set.csv
+# !data/sample_reviews.csv
+
+# 5. Serialized Model Binaries & Heavy Weights
+# Scikit-learn models & TF-IDF vectorizers can be large
+models/*
+!models/.gitkeep
+*.joblib
+*.pkl
+*.pickle
+*.h5
+*.pt
+*.pth
+*.onnx
+
+# 6. IDEs & Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 7. Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# 8. Streamlit local state
+.streamlit/
+!.streamlit/config.toml
+
+# 9. Environment variables & API keys
+.env
+.env.local
+*.env
