@@ -16,9 +16,6 @@
 > **Aspectify** disentangles mixed opinions into actionable feature-level intelligence.
 
 <br/>
-
-[🚀 Live Demo](#-live-demo--preview) • [✨ Key Features](#-key-features) • [🧠 System Architecture](#-system-architecture) • [📊 Results & Benchmarks](#-results--evaluation) • [🔬 Error Analysis](#-in-depth-error-analysis) • [🛠️ Getting Started](#️-getting-started)
-
 </div>
 
 ---
@@ -212,7 +209,6 @@ aspectify/
 ├── data/
 │   ├── raw/                   # Raw e-commerce dumps (Flipkart, Amazon India, SemEval)
 │   ├── processed/             # Cleaned, tokenized, and normalized reviews
-│   └── gold_test_set.csv      # 500+ hand-labeled ground truth benchmark
 ├── notebooks/
 │   ├── 01_data_collection_eda.ipynb    # Review lengths, rating distribution, language mix
 │   ├── 02_preprocessing_pipeline.ipynb # Hinglish normalizers, negation preservation
@@ -296,7 +292,7 @@ for aspect, sentiment in results.items():
 ## 🚀 Live Demo & Preview
 
 Try out the interactive demo hosted on **Hugging Face Spaces**:  
-👉 **[Launch Aspectify on Hugging Face Spaces](https://huggingface.co/spaces)** *(Add your space URL here)*
+👉 **[Launch Aspectify on Hugging Face Spaces](https://huggingface.co/spaces)**
 
 ```
 ┌────────────────────────────────────────────────────────────────────────┐
@@ -307,36 +303,14 @@ Try out the interactive demo hosted on **Hugging Face Spaces**:
 │                                                                        │
 │  Detected Aspects & Polarity:                                          │
 │  ┌──────────────────────┐  ┌──────────────────────┐                    │
-│  │  🔋 BATTERY: Positive│  │  🚚 DELIVERY: Negative│                   │
+│  │  🔋 BATTERY: Positive│  │  🚚 DELIVERY: Negative│                  │
 │  └──────────────────────┘  └──────────────────────┘                    │
 │                                                                        │
 │  📊 Batch CSV Analytics:                                               │
-│  [ Upload reviews.csv ] -> 📈 Aspect Sentiment Distribution Chart       │
+│  [ Upload reviews.csv ] -> 📈 Aspect Sentiment Distribution Chart      │
 └────────────────────────────────────────────────────────────────────────┘
 ```
 
----
-
-## 🛣️ Roadmap & Future Enhancements
-
-- [x] **Phase 1 (Classical ML Baseline):** TF-IDF (word + char n-grams) + One-vs-Rest SVM.
-- [x] **Phase 2 (Weak Supervision):** Bootstrapping label dictionaries + gold human evaluation set.
-- [ ] **Phase 3 (Sequence Modeling):** Bidirectional LSTM with fastText Hinglish embeddings.
-- [ ] **Phase 4 (Transformer Fine-Tuning):** Fine-tuning `l3cube-pune/hing-bert` and `ai4bharat/indic-bert` for nuanced context & sarcasm detection.
-- [ ] **Phase 5 (FastAPI Microservice):** Containerized Docker deployment with Prometheus latency monitoring.
-
----
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!  
-Feel free to check out the [issues page](https://github.com/your-username/aspectify/issues).
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ---
 
@@ -345,10 +319,3 @@ Feel free to check out the [issues page](https://github.com/your-username/aspect
 Distributed under the **MIT License**. See [`LICENSE`](LICENSE) for more information.
 
 ---
-
-<div align="center">
-
-Crafted with ❤️ for NLP & Code-Mixed Intelligence by **[Your Name](https://github.com/your-username)**  
-*Star ⭐ this repo if you find it helpful!*
-
-</div>
