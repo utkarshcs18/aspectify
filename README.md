@@ -58,8 +58,7 @@ Standard polarity classifiers mask critical product defects. **Aspectify** tackl
 ```
                                       ┌──────────────────────────────────────────────┐
                                       │           Incoming Customer Review           │
-                                      │ "Battery accha hai but delivery bekar thi"  │
-                                      └──────────────────────┬───────────────────────┘
+                                      │ "Battery accha hai but delivery bekar thi"   │                                    └──────────────────────┬───────────────────────┘
                                                              │
                                                              ▼
                                      ┌────────────────────────────────────────────────┐
@@ -303,7 +302,7 @@ Try out the interactive demo hosted on **Hugging Face Spaces**:
 │                                                                        │
 │  Detected Aspects & Polarity:                                          │
 │  ┌──────────────────────┐  ┌──────────────────────┐                    │
-│  │  🔋 BATTERY: Positive│  │  🚚 DELIVERY: Negative│                  │
+│  │  🔋 BATTERY: Positive│  │🚚 DELIVERY: Negative│                    │
 │  └──────────────────────┘  └──────────────────────┘                    │
 │                                                                        │
 │  📊 Batch CSV Analytics:                                               │
